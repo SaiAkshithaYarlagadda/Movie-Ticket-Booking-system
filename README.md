@@ -1,6 +1,6 @@
  Movie-Ticket-Booking-system
 
-This is a simple full-stack **Movie Ticket Booking System** built using **Python Flask** (backend) and **HTML/CSS/JavaScript** (frontend). It allows users to:
+This is a simple full-stack Movie Ticket Booking System built using Python Flask(backend) and HTML/CSS/JavaScript (frontend). It allows users to:
 
 1. Book movie tickets
 2.Order food (Popcorn, Coke, Nachos)
@@ -53,14 +53,12 @@ Save the code in `app.py`, then run:
 bash
 python app.py
 
-Visit `http://127.0.0.1:5000` in your browser.
 
 
- Screenshots
+Screenshots
 
-| Booking Form                                                       | Flash Message                                                            |
-| ------------------------------------------------------------------ | ------------------------------------------------------------------------ |
-| ![Form](https://via.placeholder.com/400x200.png?text=Booking+Form) | ![Success](https://via.placeholder.com/400x200.png?text=Booking+Success) |
+Booking form: ![Form](https://via.placeholder.com/400x200.png?text=Booking+Form) 
+Flash message:![Success](https://via.placeholder.com/400x200.png?text=Booking+Success) 
 
 
 
