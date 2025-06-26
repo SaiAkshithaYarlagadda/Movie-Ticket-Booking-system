@@ -1,69 +1,81 @@
- Movie-Ticket-Booking-system
+Movie Ticket Booking system
 
-This is a simple full-stack Movie Ticket Booking System built using Python Flask(backend) and HTML/CSS/JavaScript (frontend). It allows users to:
-
-1. Book movie tickets
-2.Order food (Popcorn, Coke, Nachos)
-3.Simulate a payment process
-4.Get a Booking ID and confirmation
-5. All in a beautiful single-page interface
+This is a graphical desktop application built using Python and Tkinter. The system allows users to book movie tickets, order food, and simulate a payment process within a simple GUI interface. It is ideal for beginner to intermediate Python learners looking to understand GUI design and event-driven programming.
 
 Features
+GUI built with Tkinter (no web development required)
 
-1.Movie listing with available seats
-2. Ticket booking with user details
-3.Food menu with item-wise cost
-4.Payment simulation with card & CVV validation
-5.Flash messages for booking success or failure
-6.Secure backend logic using Flask
+Displays available movies and remaining seats
 
-Technologies Used:
+Allows ticket booking with seat selection
 
-Python-Backend language                       
-Flask - Lightweight web framework              
-HTML/CSS-Page layout & styling                  
-JavaScript (basic)-Form interactivity (checkboxes, input) 
+Supports optional food ordering with prices
 
-File Structure
-app.py         # Main Flask application (runs the server)
-README.md      # Project overview and usage guide
-(Note: HTML, CSS, and JS are embedded inside `app.py` using `render_template_string()`)
+Includes basic payment simulation (card and CVV input)
 
- Getting Started:
+Generates a unique booking ID for each transaction
 
-1. Install Python
+Provides ticket cancellation by Booking ID
 
-Make sure Python 3 is installed:
+Technologies Used
+Python 3
 
-bash
-python --version
+Tkinter (standard GUI library in Python)
 
-2. Install Flask
+random module for generating booking IDs
 
-Install Flask using pip:
+Prerequisites
+Python 3 must be installed on your system
 
-bash
-pip install flask
+No external libraries are required (Tkinter is included with Python)
 
+How to Run
+Save the code to a file, for example: movie_booking_gui.py
 
- 3. Run the App
+Open a terminal or command prompt in the directory containing the file
 
-Save the code in `app.py`, then run:
+Run the script using:
 
-bash
-python app.py
+nginx
+Copy
+Edit
+python movie_booking_gui.py
+The graphical user interface will appear and guide you through the booking process
 
+Application Workflow
+Home Screen
+The main menu provides three options: Book Ticket, Cancel Ticket, and Exit.
 
+Booking Process
 
-Screenshots
+The user selects a movie from the available list
 
-Booking form: ![Form](https://via.placeholder.com/400x200.png?text=Booking+Form) 
-Flash message:![Success](https://via.placeholder.com/400x200.png?text=Booking+Success) 
+Specifies the number of tickets
 
+Optionally selects food items from a menu
 
+Provides simulated card payment information (card number and CVV)
 
- Notes
+If payment is successful, a booking confirmation with a unique ID is displayed
 
-* This is a **demo app** with in-memory storage — bookings reset when the app restarts.
-* Payment is **simulated**; no real transactions occur.
-* Each booking gets a unique ID (e.g., `B001`, `B002`).
+Cancel Ticket
+
+The user enters their booking ID
+
+If valid, the booking is canceled and seat count is updated
+
+Notes
+This is a demo system; no real payments are processed
+
+All data is stored in memory during runtime and will be lost once the program is closed
+
+The UI is styled using Tkinter's built-in widget properties, not CSS
+
+Future Enhancements
+Persist booking data to a local file or SQLite database
+
+Add user login or profile tracking
+
+Export ticket details as a printable file
+
+Add a real-time seat selection grid
